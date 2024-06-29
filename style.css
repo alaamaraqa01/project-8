@@ -1,0 +1,76 @@
+body{
+    background-image: url(../project1/images/galaxy\ \(1\).gif);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.planet-image{
+    display: flex;
+  width: 100%;
+  height: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.flex-container{
+   width: 1000px;
+   height: 900px;
+   margin-left: 200px;
+  
+   justify-content: center;
+}
+#show{
+    background-color:rgb(192, 192, 192, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+#required{
+    background-color: rgb(192, 192, 192, 0.1);
+    justify-content: center;
+}
+
+  
+
+#earth1{
+    margin-right: 150px;
+}
+#jupiter{
+    margin-right: 150px;
+}#mars{
+    margin-right: 150px;
+}#mercury{
+    margin-right: 150px;
+}#moon{
+    margin-right: 150px;
+}#neptune{
+    margin-right: 150px;
+}#pluto{
+    margin-right: 150px;
+}
+#saturn{
+    margin-right: 150px;
+
+}#uranus{
+    margin-right: 150px;
+}#venus{
+    margin-right: 150px;
+}
+.cont{
+    background-color: rgb(192, 192, 192, 0.1);
+    align-items: center;
+    display: ruby;
+}
+#res{
+    border: 1px solid rgb(192, 192, 192, 0.3);
+    border-radius: 75%;
+    justify-content: center;
+    background-color: rgb(192, 192, 192, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solar sestym</title>
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <h1 style="text-align: center;">Calculate a weight of an object on a planet</h1>
+    <br>
+    <div id="col">
+        <input style=" height: 30px; font-size: 15px; width: 200px;" type="number" id="mass"
+            placeholder="Mass in Kilogram" required>
+        <select onchange="ShowImg()" style=" font-size: 15px; height: 36px; width: 200px;" name="select" id="planet">
+            <option id="select" value="submit">--Select Planet--</option>
+            <option id="Earth" value="2">Earth</option>
+            <option id="Jupiter" value="3">Jupiter</option>
+            <option id="Mars" value="4">Mars</option>
+            <option id="Mercury" value="5">Mercury</option>
+            <option id="Moon" value="6">Moon</option>
+            <option id="Neptune" value="7">Neptune</option>
+            <option id="Pluto" value="8">Pluto</option>
+            <option id="Saturn" value="9">Saturn</option>
+            <option id="Uranus" value="10">Uranus</option>
+            <option id="Venus" value="11">Venus</option>
+
+
+        </select>
+        <button onclick="calculateWeight()" type="submit"
+            style="height: 38px; width: 130px; background-color: gray; color: white; font-size: 15px;"
+            id="calculate">Calculate weight</button>
+    </div>
+    <br>
+    <main>
+        <div id="container"
+            style="background-color:rgb(192, 192, 192, 0.2);  width: 70%; display: flex;;align-items: center; justify-content: center; height: 500px;"
+            class="flex-container">
+            <div class="flex-item image">
+                <img id="earth" style="height: 400px; width:100%;" src='./images/earth.png'
+                    class="planet-image planets" />
+                <img hidden id="earth1" style="height: 400px; width:400px;" src='./images/earth.png' class="earth" />
+                <img hidden id="jupiter" style="height: 400px; width: 400px;" src="../project1/images/jupiter.png"
+                    alt="" class=" jupiter-image planets">
+                <img hidden id="mars" style="height: 400px; width: 400px;" src="../project1/images/mars.png" alt=""
+                    class=" mars-image planets">
+                <img hidden id="mercury" style="height: 400px; width: 400px;" src="../project1/images/mercury.png"
+                    alt="" class=" mercury-image planets">
+                <img hidden id="moon" style="height: 400px; width: 400px;" src="../project1/images/moon.png" alt=""
+                    class="moon-image planets">
+                <img hidden id="neptune" style="height: 400px; width: 400px;" src="../project1/images/neptune.png"
+                    alt="" class=" neptune-image planets">
+                <img hidden id="pluto" style="height: 400px; width: 400px;" src="../project1/images/pluto.png" alt=""
+                    class=" pluto-image planets">
+                <img hidden id="saturn" style="height: 400px; width: 400px;" src="../project1/images/saturn.png" alt=""
+                    class=" saturn-image planets">
+                <img hidden id="uranus" style="height: 400px; width: 400px;" src="../project1/images/uranus.png" alt=""
+                    class=" uranus-image planets">
+                <img hidden id="venus" style="height: 400px; width: 400px;" src="../project1/images/venus.png" alt=""
+                    class=" venus-image planets">
+            </div>
+            <div class="cont">
+                <div id="result">
+    
+                </div>
+                <div id="res"></div>
+            </div>
+              
+            <div class="flex-item description">
+
+            </div>
+            
+            
+
+        </div>
+        <div hidden id="required">
+            <h1>mass is required</h1>
+        </div>
+
+        <div hidden id="show">
+            <h1>you did not choose a planet yet</h1>
+            
+        </div>
+       
+
+        
+      
+    </main>
+   
+
+
+     
+      
+  
+  
+
+
+
+    <script src="index.js">
+
+
+    </script>
+</body>
+
+</html>
